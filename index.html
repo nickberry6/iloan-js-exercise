@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>File List</title>
+    <title>Web File Manager</title>
     <link rel="stylesheet" type="text/css" href="fileList.css">
   </head>
   <body>
-    <h1 style="text-align:center">File List App</h1>
-    <input type="file" id="files" multiple/>
-    <div id="well" style="width:150px; height:100px; border: 10px dashed #ccc; text-align:center; vertical-align:middle">or drag and drop</div>
-    <div id="list" class="tileList"></div>
-    <br>
-    <h4 id="total"></h4>
+    <div class="header">
+      <h1 style="padding-bottom:15px;">File Manager</h1>
+      <input type="file" id="files" name="files" multiple/>
+      <label for="files" class="file-label">Add a File</label>
+      <h4 id="total"></h4>
+    </div>
+    
+    
+    <div id="list"></div>
     
     <script src="./fileList.js" ></script>
   </body>
