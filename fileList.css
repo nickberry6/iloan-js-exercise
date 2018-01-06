@@ -1,0 +1,19 @@
+.tile {
+  border: .7px solid grey;
+  padding: 10px;
+  text-align: center;
+}
+
+.tileList {
+  margin-top: 10px;
+  display:grid;
+  grid-gap:10px;
+  grid-template-columns: auto auto auto auto;
+}
+
+.delete {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: red;
+  margin: 10px;
+}
