@@ -2,19 +2,23 @@
 <html>
   <head>
     <title>Web File Manager</title>
-    <link rel="stylesheet" type="text/css" href="fileList.css">
+    <link rel="stylesheet" type="text/css" href="fileManager.css">
   </head>
   <body>
     <div class="header">
-      <h1 style="padding-bottom:15px;">File Manager</h1>
-      <input type="file" id="files" name="files" multiple/>
-      <label for="files" class="file-label">Add a File</label>
-      <h4 id="total"></h4>
+      <h1>File Manager</h1>
+      <div>
+        <input type="file" id="files" name="files" multiple/>
+        <label for="files" class="file-label">Add a File</label>
+        <h4 id="total"></h4>
+        <button id="switcher"></button>
+      </div>
     </div>
     
     
+    <div id="tiles"></div>
     <div id="list"></div>
     
-    <script src="./fileList.js" ></script>
+    <script src="./fileManager.js" ></script>
   </body>
 </html>
